@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "transport_service_providers",
+  "info": {
+    "name": "Bus Service Provider",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "route_details": {
+      "via": "bus_service_providers",
+      "collection": "route-detail"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bus_details",
+  "info": {
+    "name": "busDetails"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "busCode": {
+      "type": "string"
+    },
+    "seatList": {
+      "type": "biginteger"
+    },
+    "seatMap": {
+      "type": "string"
+    }
+  }
+}

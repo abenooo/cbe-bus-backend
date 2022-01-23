@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/transport-service-providers",
+      "handler": "transport-service-provider.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/transport-service-providers/count",
+      "handler": "transport-service-provider.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/transport-service-providers/:id",
+      "handler": "transport-service-provider.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/transport-service-providers",
+      "handler": "transport-service-provider.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/transport-service-providers/:id",
+      "handler": "transport-service-provider.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/transport-service-providers/:id",
+      "handler": "transport-service-provider.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

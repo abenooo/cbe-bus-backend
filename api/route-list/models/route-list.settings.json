@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "route_lists",
+  "info": {
+    "name": "Route List"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "locationId": {
+      "type": "string"
+    },
+    "locationName": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "lonFlat": {
+      "type": "string"
+    }
+  }
+}

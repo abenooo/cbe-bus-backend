@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/bus-details",
+      "handler": "bus-details.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bus-details/count",
+      "handler": "bus-details.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bus-details/:id",
+      "handler": "bus-details.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/bus-details",
+      "handler": "bus-details.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/bus-details/:id",
+      "handler": "bus-details.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/bus-details/:id",
+      "handler": "bus-details.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

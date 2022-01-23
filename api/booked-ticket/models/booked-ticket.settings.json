@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "booked_tickets",
+  "info": {
+    "name": "Booked Ticket"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "route_detail": {
+      "model": "route-detail",
+      "via": "booked_tickets"
+    },
+    "purchaseDate": {
+      "type": "datetime"
+    },
+    "customerPhone": {
+      "type": "integer"
+    },
+    "customerName": {
+      "type": "string"
+    },
+    "ticketNumber": {
+      "type": "biginteger"
+    },
+    "seatCode": {
+      "type": "biginteger"
+    },
+    "isActive": {
+      "type": "boolean"
+    }
+  }
+}

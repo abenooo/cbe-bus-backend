@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "route_details",
+  "info": {
+    "name": "Route Detail"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "bus_service_providers": {
+      "collection": "transport-service-provider",
+      "via": "route_details",
+      "dominant": true
+    },
+    "booked_tickets": {
+      "via": "route_detail",
+      "collection": "booked-ticket"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/booked-tickets",
+      "handler": "booked-ticket.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/booked-tickets/count",
+      "handler": "booked-ticket.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/booked-tickets/:id",
+      "handler": "booked-ticket.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/booked-tickets",
+      "handler": "booked-ticket.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/booked-tickets/:id",
+      "handler": "booked-ticket.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/booked-tickets/:id",
+      "handler": "booked-ticket.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
