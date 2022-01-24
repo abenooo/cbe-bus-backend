@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "route_lists",
   "info": {
-    "name": "Route List"
+    "name": "Route List",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -11,17 +12,21 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "locationId": {
-      "type": "string"
-    },
     "locationName": {
       "type": "string"
     },
     "description": {
       "type": "string"
     },
-    "lonFlat": {
+    "longtude": {
       "type": "string"
+    },
+    "latitude": {
+      "type": "string"
+    },
+    "route_details": {
+      "via": "destinations",
+      "collection": "route-detail"
     }
   }
 }

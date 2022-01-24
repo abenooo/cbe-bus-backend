@@ -12,9 +12,50 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "route_details": {
-      "via": "bus_service_providers",
+    "bspName": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "username": {
+      "type": "string"
+    },
+    "password": {
+      "type": "password"
+    },
+    "apiKey": {
+      "type": "string"
+    },
+    "website": {
+      "type": "string"
+    },
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "slogan": {
+      "type": "text"
+    },
+    "accountNumber": {
+      "type": "string"
+    },
+    "bspId": {
+      "via": "bsp",
       "collection": "route-detail"
+    },
+    "address": {
+      "type": "component",
+      "repeatable": false,
+      "component": "address.address"
     }
   }
 }

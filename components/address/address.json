@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_address_addresses",
+  "info": {
+    "name": "address",
+    "icon": "id-card"
+  },
+  "options": {},
+  "attributes": {
+    "city": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "integer"
+    },
+    "email": {
+      "type": "email"
+    }
+  }
+}

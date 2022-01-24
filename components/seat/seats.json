@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_seat_seats",
+  "info": {
+    "name": "Seats",
+    "icon": "archive",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "seatStatus": {
+      "type": "boolean"
+    },
+    "seatMap": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

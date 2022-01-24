@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "route_details",
   "info": {
-    "name": "Route Detail"
+    "name": "Route Detail",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -11,14 +12,43 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "bus_service_providers": {
-      "collection": "transport-service-provider",
+    "departureTime": {
+      "type": "time"
+    },
+    "date": {
+      "type": "date"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "status": {
+      "type": "boolean"
+    },
+    "departure": {
+      "collection": "route-list",
       "via": "route_details",
+      "dominant": true
+    },
+    "bus_details": {
+      "via": "route_detail",
+      "collection": "bus-details"
+    },
+    "destinations": {
+      "collection": "route-list",
+      "via": "route_details",
+      "dominant": true
+    },
+    "bsp": {
+      "via": "bspId",
+      "collection": "transport-service-provider",
       "dominant": true
     },
     "booked_tickets": {
       "via": "route_detail",
       "collection": "booked-ticket"
+    },
+    "destinationTime": {
+      "type": "time"
     }
   }
 }

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/seat-types",
+      "handler": "seat-types.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/seat-types/count",
+      "handler": "seat-types.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/seat-types/:id",
+      "handler": "seat-types.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/seat-types",
+      "handler": "seat-types.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/seat-types/:id",
+      "handler": "seat-types.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/seat-types/:id",
+      "handler": "seat-types.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

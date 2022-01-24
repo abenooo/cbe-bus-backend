@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "bus_details",
+  "collectionName": "seat_types",
   "info": {
-    "name": "busDetails",
+    "name": "SeatTypes",
     "description": ""
   },
   "options": {
@@ -12,12 +12,14 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "busCode": {
-      "type": "string"
+    "seatNumber": {
+      "type": "biginteger"
     },
-    "route_detail": {
-      "via": "bus_details",
-      "model": "route-detail"
+    "seats": {
+      "type": "dynamiczone",
+      "components": [
+        "seat.seats"
+      ]
     }
   }
 }
