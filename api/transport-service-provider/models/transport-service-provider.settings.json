@@ -46,7 +46,9 @@
       "type": "text"
     },
     "accountNumber": {
-      "type": "string"
+      "type": "string",
+      "required": true,
+      "unique": true
     },
     "bspId": {
       "via": "bsp",
